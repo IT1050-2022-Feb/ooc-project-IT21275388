@@ -27,5 +27,5 @@ void Feedback:: setDetails(char com[],char comname[],int comID)
 }
 Feedback::~Feedback()
 {
-  cout << "desctuctor activated" << endl;
+  cout << " desctuctor activated " << endl;
 }

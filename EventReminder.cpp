@@ -1,5 +1,5 @@
-#include <cstring>
 #include <iostream>
+#include <cstring>
 #include "EventReminder.h"
 #include "BillReminder.h"
 #include "User.h"
@@ -7,14 +7,15 @@
 
 using namespace std;
 // defualt constructor
-EventReminder:: EventReminder() {
+EventReminder:: EventReminder() 
+{
   strcpy(venue, "");
   duration = 0;
   strcpy(description, "");
   strcpy(dueDate, "");
   strcpy(dueTime, "");
 }
-// overload constructor
+// overloaded constructor
 EventReminder::EventReminder(char ven[], int dur, char desc[], char dDate[],
                              char dTime[], char type[], int id, char time[],
                              char date[], char title[], int fre, User *puser)
@@ -27,10 +28,20 @@ EventReminder::EventReminder(char ven[], int dur, char desc[], char dDate[],
   strcpy(dueTime, dTime);
 }
 void EventReminder::setDetails(char ven[], int dur, char desc[], char dDate[],
-                               char dTime) {}
-void EventReminder::deleteEventDetails() {}
-void EventReminder::receiveEventReminders() {}
+                               char dTime)
+{
+  
+}
+void EventReminder::deleteEventDetails() 
+{
+  
+}
+void EventReminder::receiveEventReminders() 
+{
+  
+}
 // destructor
-EventReminder::~EventReminder() {
-  cout << "desctuctor for the event activated" << endl;
+EventReminder::~EventReminder() 
+{
+  cout << "desctuctor activated" << endl;
 }

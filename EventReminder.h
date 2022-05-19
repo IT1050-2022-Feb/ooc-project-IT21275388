@@ -1,8 +1,8 @@
 #include "Reminder.h"
 #include "User.h"
-#include <cstring>
-// the child class of the reminder class
-class EventReminder : public Reminder {
+
+class EventReminder : public Reminder
+{
 private:
   char venue[20];
   int duration;
